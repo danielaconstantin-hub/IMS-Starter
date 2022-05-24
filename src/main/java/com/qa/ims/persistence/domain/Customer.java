@@ -5,41 +5,87 @@ public class Customer {
 	private Long id;
 	private String firstName;
 	private String surname;
-
-	public Customer(String firstName, String surname) {
+	private String username;
+	private String password;
+	
+	public Customer(String firstName, String surname, String username, String password) {
 		this.setFirstName(firstName);
 		this.setSurname(surname);
+		this.setUsername(username);
+		this.setPassword(password);
 	}
+		
+	
 
-	public Customer(Long id, String firstName, String surname) {
+	public Customer(Long id, String firstName, String surname, String username, String password) {
 		this.setId(id);
 		this.setFirstName(firstName);
 		this.setSurname(surname);
+		this.setUsername(username);
+		this.setPassword(password);
 	}
+
+	
 
 	public Long getId() {
 		return id;
 	}
 
+
+
 	public void setId(Long id) {
 		this.id = id;
 	}
+
+
 
 	public String getFirstName() {
 		return firstName;
 	}
 
+
+
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
 	}
+
+
 
 	public String getSurname() {
 		return surname;
 	}
 
+
+
 	public void setSurname(String surname) {
 		this.surname = surname;
 	}
+
+
+
+	public String getUsername() {
+		return username;
+	}
+
+
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+
+
+	public String getPassword() {
+		return password;
+	}
+
+
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+
 
 	@Override
 	public String toString() {
